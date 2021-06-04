@@ -1,0 +1,9 @@
+.main {
+    position: relative;
+
+    background-color: transparent;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: stretch;
+}

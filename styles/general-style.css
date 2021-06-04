@@ -1,0 +1,103 @@
+body, html {
+
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--black);
+    color: var(--white);
+    
+    min-width: 400px;
+
+    --black: rgb(30,30,30);
+    --white: rgb(230,230,230);
+    --blue: rgb(100,100,230);
+    --purple: rgb(120,0,255);
+    --red: rgb(230,100,100);
+    --green: rgb(35,250,150);
+    --yellow: rgb(245,240,100);
+    --gray: rgb(30,30,50);
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--black);
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(50,50,50);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--yellow);
+}
+.menu-curtain {
+
+  /* By default hidden */
+  opacity: 0;
+  pointer-events: none;
+
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+
+  background-color: var(--black);
+
+  transition: opacity 500ms;
+
+  z-index: 10;
+}
+.popup-curtain {
+
+  /* By default hidden */
+  opacity: 0;
+  pointer-events: none;
+
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+
+  background-color: var(--black);
+
+  transition: opacity 500ms;
+
+  z-index: 40;
+}
+.close-popup-button {
+
+  /* By default hidden */
+  opacity: 0;
+  pointer-events: none;
+
+  position: fixed;
+  top: 20px; right: 20px;
+  width: 75px; height: 75px;
+
+  background-color: var(--purple);
+
+  border-radius: 10px;
+  border: 3px solid var(--white);
+
+  transition: transform 500ms, opacity 500ms;
+
+  z-index: 60;
+}
+.close-popup-button:hover {
+  transform: scale(0.8);
+}
+.close-popup-button::before {
+  content: '';
+  background-color: var(--yellow);
+  position: absolute;
+  width: 75%; height: 10px;
+  border-radius: 10px;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%) rotate(45deg);
+}
+.close-popup-button::after {
+  content: '';
+  background-color: var(--yellow);
+  position: absolute;
+  width: 75%; height: 10px;
+  border-radius: 5px;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%) rotate(-45deg);
+}

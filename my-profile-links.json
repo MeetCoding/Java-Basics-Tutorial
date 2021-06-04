@@ -1,0 +1,26 @@
+[
+    {
+        "media":"Twitter",
+        "link": "https://twitter.com/MeetCoding"
+    },
+    {
+        "media":"Github",
+        "link":"https://github.com/MeetCoding"
+    },
+    {
+        "media":"Dev.to",
+        "link":"https://dev.to/meetcoding"
+    },
+    {
+        "media":"Hashnode",
+        "link":"https://hashnode.com/@MeetCoding"
+    },
+    {
+        "media":"StackOverflow",
+        "link":"https://stackoverflow.com/users/15109867/meet-shah?tab=profile"
+    },
+    {
+        "media":"Codepen",
+        "link":"https://codepen.io/MeetCoding"
+    }
+]

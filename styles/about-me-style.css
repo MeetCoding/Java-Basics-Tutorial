@@ -1,0 +1,95 @@
+.about-me-section {
+    padding: 20px 40px;
+    padding-top: 100px;
+
+    background-color: var(--gray);
+
+    display: flex;
+    align-items: center;
+}
+.about-me-content {
+    flex-grow: 1;
+}
+.about-me-heading {
+    font-size: 40px;
+}
+.about-me-info {
+    font-size: 16px;
+}
+.my-profile-links {
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.my-profile-link-button {
+    text-decoration: none;
+    color: var(--white);
+    text-shadow: 0px 0px 5px var(--black);
+
+    margin: 10px;
+    padding: 10px 20px;
+
+    border: 3px solid var(--white);
+    border-radius: 5px;
+
+    filter: brightness(80%);
+    transition: all 500ms;
+}
+.my-profile-link-button:hover {
+    filter: brightness(100%);
+    transform: scale(1.2);
+}
+#twitter {
+    background-color: rgb(28,164,244);   
+}
+#github {
+    background-color: rgb(48,164,68);
+}
+#dev-to {
+    background-color: rgb(128,124,252);
+}
+#hashnode {
+    background-color: rgb(48,100,252);
+}
+#stackoverflow {
+    background-color: rgb(248,132,36);
+}
+#codepen {
+    background-color: rgb(96,92,116);
+}
+.my-photo {
+    width: 400px; height: 400px;
+
+    border-radius: 50%;
+
+    flex-shrink: 1;
+    flex-grow: 0;
+    
+    margin: 0 40px;
+}
+
+@media (max-width: 1000px) {
+    .about-me-section {
+        flex-direction: column-reverse;
+    }
+}
+@media (max-width: 500px) {
+    .my-photo {
+        width: 300px; height: 300px;
+        margin: 40px 0;
+    }
+}
+@media (max-width: 400px) {
+    .my-photo {
+        width: 250px; height: 250px;
+        margin: 10px 0;
+    }
+    .about-me-section {
+        padding: 20px 20px;
+        padding-top: 100px;
+    }
+}

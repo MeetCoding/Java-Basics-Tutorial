@@ -1,0 +1,36 @@
+Welcome to the Guide to how to add/alter/remove content from this website:
+
+Add New Folder:
+
+1) Create a new folder of your prefered name inside "res" folder.
+2) Create a new array item of type object in "res-register.json" file in root.
+3) Create a new property in the added object and name it "folder".
+4) Set the value of this "folder" property to the name of the folder created.
+
+Remove a Folder:
+
+1) Locate the folder inside "res" folder.
+2) Right click and delete the folder.
+3) Remove the array item of type object from res-register.json with the "folder" property set as the folder name.
+
+Add/Alter a file:
+
+1) Select the folder in "res" directory where you want to add your file.
+2) Create the file with html extension.
+3) Locate the array item of type object correlating to the name of the folder in res-register.json.
+4) If the object has "files" property, add the name of this file as string in the array corresponding to "files" property.
+5) In case of absence of "files" property, create a property named "files" in the same object and set the value to array and than add the name of the new file as string in the array.
+
+Remove a file:
+
+1) Select the folder in "res" directory where that file was added.
+2) Right click t=and delete the file.
+3) Locate the array item of type object correlating to the name of the folder in res-register.json.
+4) Remove the string in "files" array in the object which corresponds to the deleted file.
+
+
+Elements in a file:
+
+<h1 class="card-heading"> **Your Heading Here** </h1>       :- Heading of the file
+<p class="card-paragraph"> **Your Paragraph Here** </p>     :- Paragraph in the file
+<p class="card-code"><pre> **Your Code Here** </pre></p>    :- Code in the file

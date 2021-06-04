@@ -1,0 +1,113 @@
+.menu {
+    position: relative;
+    width: 250px;
+
+    list-style: none;
+
+    flex-grow: 0;
+    flex-shrink: 0;
+    
+    background-color: var(--blue);
+
+    margin: 30px 20px;
+    padding: 80px 0 10px 0;
+
+    border-radius: 10px;
+    
+    display: flex;
+    flex-direction: column;
+
+    transition: transform 500ms;
+
+    z-index: 20;
+}
+.close-menu-button {
+
+    /* Button hidden in desktop/laptop */
+    visibility: hidden;
+
+    background-color: transparent;
+
+    border-radius: 10px;
+    border: none;
+
+    position: absolute;
+    top: 10px; right: 10px;
+    width: 40px; height: 40px;
+
+    transition: transform 500ms;
+}
+.close-menu-button:hover {
+    transform: scale(0.8);
+}
+.close-menu-button::before {
+    content: '';
+    background-color: var(--yellow);
+    position: absolute;
+    width: 75%; height: 5px;
+    border-radius: 5px;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+.close-menu-button::after {
+    content: '';
+    background-color: var(--yellow);
+    position: absolute;
+    width: 75%; height: 5px;
+    border-radius: 5px;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+.open-folder-button {
+
+    text-align: left;
+    color: var(--white);
+
+    background-color: transparent;
+
+    border: 0;
+
+    width: 100%;
+
+    margin: 0;
+    padding: 10px 30px;
+}
+.open-folder-button:hover {
+    background-color: var(--purple)
+}
+.open-folder-focused-button {
+    background-color: var(--white);
+    color: var(--black);
+}
+.open-folder-focused-button:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+.section-heading {
+    position: absolute;
+    top: 0; left: 0;
+
+    margin: 5px 20px;
+    padding: 0;
+
+    text-shadow: 0px 0px 5px var(--black);
+}
+@media (max-width: 1000px) {
+    .menu {
+        position: fixed;
+        top: 0; left: 0;
+        height: 100%;
+
+        box-shadow: 12px 0px 25px 0px var(--black);
+
+        transform: translateX(-150%);
+
+        border-radius: 0;
+        
+        margin: 0;
+    }
+    .close-menu-button {
+        /* Button visible in mobile/tablet */
+        visibility: visible;
+    }
+}

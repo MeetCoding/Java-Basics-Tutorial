@@ -1,0 +1,141 @@
+.card-container {
+
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+
+    margin: 30px;
+    padding: 20px;
+
+    position: relative;
+
+    background-color: var(--gray);
+
+    border-radius: 20px;
+    border: 3px solid var(--white);
+}
+.card-heading {
+    position: static;
+}
+.card-paragraph {
+    position: static;
+}
+.card-code {
+    white-space: pre-wrap;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    background-color: var(--white);
+    color: var(--black);
+
+    padding: 20px;
+    width: 100%;
+
+    border-radius: 10px;
+}
+.card-video {
+
+    /* By default hidden */
+    visibility: hidden;
+
+    border-radius: 10px;
+
+    aspect-ratio: 560/315;
+    width: 70%;
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+
+    z-index: 50;
+}
+.card-compiler {
+
+    /* By default hidden */
+    visibility: hidden;
+
+    border-radius: 10px;
+
+    position: fixed;
+    width: 80%;
+    height: 80%;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+
+    z-index: 50;
+}
+.card-footer {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+    width: 100%;
+
+    padding: 5px 10px;
+    margin: 20px 0;
+
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+}
+.card-footer > * {
+
+    flex-grow: 1;
+
+    height: 50px;
+
+    margin: 0 10px;
+
+    border-radius: 10px;
+    border: 3px solid var(--white);
+
+    color: var(--white);
+    font-weight: bold;
+    font-size: 15px;
+    text-shadow: 0px 0px 5px var(--black);
+
+    filter: brightness(80%);
+    transition: all 500ms;
+}
+.card-footer > *:hover {
+    filter: brightness(100%);
+    transform: scale(1.05);
+}
+.card-footer-video-button {
+    background-color: rgb(29, 41, 81);
+}
+.card-footer-compiler-button {
+    background-color: rgb(76, 81, 109);
+}
+.btn {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50px; left: 50px;
+
+    background-color: red;
+    
+    z-index: 800px;
+}
+@media (max-width: 600px) {
+    .card-video {
+        width: 80%;
+        height: auto;
+    }
+}
+@media (max-width: 500px) {
+    .card {
+        margin: 10px;
+    }
+}
