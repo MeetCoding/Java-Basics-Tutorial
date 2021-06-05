@@ -39,6 +39,8 @@ Elements in a file:
 <video> **Youtube Video ID here** </video>
 <compiler> **JDoodle project ID here** </compiler>
 
+<br> is used to add a line brake in paragraph
+
 *heading tag is compulsory and you should have atleast one heading tag
 *You can have multiple heading, paragraph and pre tags
 *their must be one or less footer, video and compiler tag
