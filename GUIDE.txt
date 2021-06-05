@@ -31,6 +31,17 @@ Remove a file:
 
 Elements in a file:
 
-<h1 class="card-heading"> **Your Heading Here** </h1>       :- Heading of the file
-<p class="card-paragraph"> **Your Paragraph Here** </p>     :- Paragraph in the file
-<p class="card-code"><pre> **Your Code Here** </pre></p>    :- Code in the file
+<heading> **Your heading here** </heading>
+<paragraph> **Your paragraph here** </paragraph>
+<pre> **Your code here** </pre>
+
+<footer></footer>
+<video> **Youtube Video ID here** </video>
+<compiler> **JDoodle project ID here** </compiler>
+
+*heading tag is compulsory and you should have atleast one heading tag
+*You can have multiple heading, paragraph and pre tags
+*their must be one or less footer, video and compiler tag
+*more than one footer/video or compiler tag will lead to error
+*you can choose not to have the footer, video and compiler
+*footer, video and compiler tag must always be together
