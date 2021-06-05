@@ -81,3 +81,8 @@
         visibility: visible;
     }
 }
+@media (prefers-color-scheme: dark) {
+    .bar {
+        background-color: var(--yellow);
+    }
+}
