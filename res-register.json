@@ -1,47 +1,9 @@
 [
     {
-        "folder":"Section1",
+        "folder":"Introduction",
         "files":
         [
-            "Sample1.html",
-            "Sample2.html",
-            "Sample3.html"
-        ]
-    },
-    {
-        "folder":"Section2",
-        "files":
-        [
-            "Sample1.html",
-            "Sample2.html",
-            "Sample3.html"
-        ]
-    },
-    {
-        "folder":"Section3",
-        "files":
-        [
-            "Sample1.html",
-            "Sample2.html",
-            "Sample3.html"
-        ]
-    },
-    {
-        "folder":"Section4",
-        "files":
-        [
-            "Sample1.html",
-            "Sample2.html",
-            "Sample3.html"
-        ]
-    },
-    {
-        "folder":"Section5",
-        "files":
-        [
-            "Sample1.html",
-            "Sample2.html",
-            "Sample3.html"
+            "Welcome.html"
         ]
     }
 ]
